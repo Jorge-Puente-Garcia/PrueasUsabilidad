@@ -1,0 +1,24 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem ;
+}
+
+#game-board {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}

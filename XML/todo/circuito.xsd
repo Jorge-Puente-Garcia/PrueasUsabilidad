@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://www.uniovi.es" elementFormDefault="qualified" targetNamespace="http://www.uniovi.es" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="tramo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tramo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="distanciaTramo" />
+				<xs:element ref="coordenada" />
+				<xs:element ref="numeroSector" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="distanciaTramo">
+		<xs:complexType>
+			<xs:attribute name="distancia" type="xs:double" use="required" />
+			<xs:attribute name="unidades" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="coordenada">
+		<xs:complexType>
+			<xs:attribute name="longitud" type="xs:double" use="required" ></xs:attribute>
+			<xs:attribute name="latitud" type="xs:double" use="required" />
+			<xs:attribute name="altitud" type="xs:double" use="required" />
+		</xs:complexType>	
+	</xs:element>
+	<xs:simpleType name="longitud">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0"></xs:minInclusive>
+			<xs:maxInclusive value="90"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="latitud">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="-180"></xs:minInclusive>
+			<xs:maxInclusive value="180"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="numeroSector" type="xs:int" />
+	<xs:element name="circuitoInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="longitudCircuito" />
+				<xs:element ref="anchuraMedia" />
+				<xs:element ref="fechaCarrera" />
+				<xs:element ref="horaInicioEspañola" />
+				<xs:element ref="numeroVueltas" />
+				<xs:element ref="localidad" />
+				<xs:element ref="pais" />
+				<xs:element ref="referecias" />
+				<xs:element ref="fotografias" />
+				<xs:element ref="videos" />
+				<xs:element ref="circuito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="numSector">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"></xs:minInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="referecias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia" type="xs:string" />
+	<xs:element name="fotografias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="5" ref="foto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foto" type="xs:string" />
+	<xs:element name="videos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="unidadesCircuito" type="xs:string" />
+	<xs:element name="longitudCircuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="valorLongitudCircuito" />
+				<xs:element ref="unidadesLongitudCircuito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unidadesLongitudCircuito" type="xs:string" />
+	<xs:element name="valorLongitudCircuito" type="xs:double" />
+	<xs:element name="anchuraMedia">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="valorAnchuraMedia" />
+				<xs:element ref="unidadesAnchuraMedia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="unidadesAnchuraMedia" type="xs:string" />
+	<xs:element name="valorAnchuraMedia" type="xs:string" />
+	<xs:element name="fechaCarrera" type="xs:date" />
+	<xs:element name="numeroVueltas" type="xs:int" />
+	<xs:element name="horaInicioEspañola" type="xs:string" />
+	<xs:element name="localidad" type="xs:string" />
+	<xs:element name="pais" type="xs:string" />
+</xs:schema>

@@ -1,0 +1,94 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+
+/*
+Especificidad 0,0,2
+*/
+body > section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    margin: 1em;
+    width: 100%; 
+}
+
+body > section>h3{
+    flex: 1 1 100%;
+}
+/*
+    Especifidad 0,0,3
+    Warning:Hay un color de fondo establecido y no hay color de primer plano
+    El color de primer plano se ha definido previamente en el archivo de estilos.
+*/
+body > section > article {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 30%;
+    width: 23%;
+    aspect-ratio: 1; 
+    max-width: 25%;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    background-color: #bafcb5;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+/*
+    Especifidad 0,0,2
+    Warning:Hay un color de fondo establecido y no hay color de primer plano
+    El color de primer plano se ha definido previamente en el archivo de estilos.
+*/
+article>h3, article>img {
+    backface-visibility: hidden;
+    position: absolute;
+}
+/*
+    Especifidad 0,0,2
+*/
+article > h3 {
+    transform: rotateY(0deg);
+    background-color: #feffb2;
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
+    width: auto;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
+    word-wrap: break-word; 
+}
+/*
+    Especifidad 0,0,2
+*/
+article> img {
+    transform: rotateY(180deg);
+    max-width: 100%; 
+    max-height: 100px; 
+    object-fit: contain;
+}
+
+/*
+    Especifidad 0,1,1
+*/
+article[data-state=flip] {
+    transform: rotateY(180deg);
+}
+/*
+    Especifidad 0,1,1
+*/
+article[data-state=unflip] {
+    transform: rotateY(0deg);
+}
+/*
+    Especifidad 0,1,1
+*/
+article[data-state=revealed] {
+    transform: rotateY(180deg);
+}
+
+

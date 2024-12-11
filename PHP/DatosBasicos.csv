@@ -1,0 +1,40 @@
+tabla,nombre,equipo,país,número_de_campeonatos
+drivers,Lewis Hamilton,Mercedes,Reino Unido,7
+drivers,Sebastian Vettel,Aston Martin,Alemania,4
+drivers,Max Verstappen,Red Bull Racing,Países Bajos,2
+drivers,Charles Leclerc,Ferrari,Mónaco,0
+drivers,Fernando Alonso,Aston Martin,España,2
+drivers,Daniel Ricciardo,AlphaTauri,Australia,0
+drivers,Kimi Räikkönen,Alfa Romeo,Finlandia,1
+tabla,id_driver,tipo_penalización,fecha,carrera,cantidad
+penalties,1,Cambio de motor,2024-05-01,Gran Premio de España,5
+penalties,2,Colisión con otro piloto,2023-09-15,Gran Premio de Italia,10
+penalties,3,Infracción técnica,2023-07-30,Gran Premio de Gran Bretaña,3
+penalties,4,Falta de combustible en la línea de meta,2024-04-10,Gran Premio de Australia,5
+penalties,5,Bloqueo en la pista,2024-06-12,Gran Premio de Canadá,5
+penalties,6,Exceso de velocidad en el pit lane,2024-03-20,Gran Premio de Bahréin,10
+penalties,7,Desobedecer órdenes del equipo,2023-11-25,Gran Premio de Abu Dhabi,2
+tabla,id_driver,fecha_inicio,fecha_fin,razón
+suspensions,1,2024-07-01,2024-07-15,Desobedecer órdenes del equipo
+suspensions,2,2023-06-15,2023-06-30,Comportamiento peligroso
+suspensions,3,2024-08-01,2024-08-10,Colisión en la pista
+suspensions,4,2024-09-01,2024-09-15,Exceso de velocidad en el pit lane
+suspensions,5,2024-10-01,2024-10-10,Falta de respeto hacia los oficiales
+suspensions,6,2023-05-01,2023-05-10,Infracción técnica
+suspensions,7,2023-11-01,2023-11-05,Bloqueo en la pista
+tabla,id_penalty,impacto_en_carrera,posición_final
+penalty_impact,1,Reducción de velocidad,4
+penalty_impact,2,Descalificación,20
+penalty_impact,3,Pérdida de 10 posiciones,15
+penalty_impact,4,Pérdida de 5 posiciones,6
+penalty_impact,5,Descalificación,20
+penalty_impact,6,Pérdida de 5 posiciones,10
+penalty_impact,7,Pérdida de 3 posiciones,8
+tabla,id_team,id_penalty,temporada,impacto_equipo
+team_penalties,1,1,2024,Pérdida de puntos importantes
+team_penalties,2,2,2023,Descalificación del equipo
+team_penalties,3,3,2023,Pérdida de puntos en el campeonato
+team_penalties,4,4,2024,Descalificación del equipo
+team_penalties,5,5,2024,Pérdida de puntos en el campeonato
+team_penalties,6,6,2024,Pérdida de puntos importantes
+team_penalties,7,7,2023,Pérdida de puntos en el campeonato

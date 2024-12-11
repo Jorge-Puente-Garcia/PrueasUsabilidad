@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1Desktop</title>
+    <meta name="author" content="Jorge" />
+    <meta name="description" content="Proyecto de F1 para la asignatura SEW" />
+    <meta name="keywords" content="f1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Enlace a la pagina de inicio"><h1>F1 Desktop</h1></a>
+        <nav>
+            <a href="index.html" title="Enlace a la pagina de inicio" >Index</a>
+            <a href="piloto.html" title="Enlace a la pagina del piloto" class="active">Piloto</a>
+            <a href="noticias.html" title="Enlace a la pagina de noticias">Noticias</a>
+            <a href="calendario.html" title="Enlace a la pagina de calendario">Calendario</a>
+            <a href="metereologia.html" title="Enlace a la pagina de metereologia">Metereologia</a>
+            <a href="circuito.html" title="Enlace a la pagina de circuito" >Circuito</a>
+            <a href="viajes.php" title="Enlace a la pagina de viajes">Viajes</a>
+            <a href="juegos.html" title="Enlace a la pagina de juegos">Juegos</a>
+        </nav>
+    </header>
+
+    <p id="migas">Estás en: <a href="index.html" title="Enlace a la pagina de inicio">Inicio</a> >> Piloto</p>
+
+    <main>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <section>
+        <h2>Lance Stroll Aston Martin Racing</h2>
+        <h3>Datos personales</h3>
+        <p>Lance Strulovitch</p>
+        <p>Dorsal número 18</p>
+        <p>Nacido en Canadá en 1998 </p>
+        <p>Reside en Canadá</p>
+        <h4>Aficiones</h4>
+        <ul>
+            <li>Correr</li>
+            <li>Andar en vicicleta</li>
+            <li>Golf</li>
+            <li>Jugar a videojuegos</li>
+            <li>Coleccionar coches</li>
+        </ul>
+        <picture>
+            <source media="(max-width:465px)" srcset="multimedia/imagenes/2021-Lance-Stroll-portrait-pequena.jpg">
+            <source media="(max-width:799px)" srcset="multimedia/imagenes/2021-Lance-Stroll-portrait-mediana.jpg">
+            <source media="(min-width:800px)" srcset="multimedia/imagenes/2021-Lance-Stroll-portrait-grande.jpg"> 
+            <img src="multimedia/imagenes/2021-Lance-Stroll-portrait-grande.jpg" alt="Imagen de lance Stroll" />
+        </picture>
+    </section>
+    
+        <h3>Tabla de este año: </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" id="Puntos">Puntos</th>
+                    <th scope="col" id="Posición">Posición</th>
+                    <th scope="col" id="Poles">Poles</th>
+                    <th scope="col" id="Victorias">Victorias</th>
+                    <th scope="col" id="Podios">Podios</th>     
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="Puntos">286</td>
+                    <td headers="Posición" >6º</td>
+                    <td headers="Poles">4</td>
+                    <td headers="Victorias">2</td>
+                    <td headers="Podios">9</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    
+        <h3>Resultados más destacados de los últimos 3 años</h3>
+        <ul>
+            <li>Año 2023
+            <ol>
+                <li>Arabia Saudí:
+                    <ul>
+                        <li>
+                            Escuderia: Aston Martin.
+                        </li>
+                        <li>
+                            Puntos de carrera: 20.
+                        </li>
+                        <li>
+                            Posición: 8º.
+                        </li>
+                    </ul>
+                </li>
+                <li>Mónaco:
+                    <ul>
+                        <li>
+                            Escuderia: Aston Martin.
+                        </li>
+                        <li>
+                            Puntos de carrera: 20.
+                        </li>
+                        <li>
+                            Posición: 8º.
+                        </li>
+                    </ul>
+                </li>
+                <li>Japón:
+                    <ul>
+                        <li>
+                            Escuderia: Aston Martin.
+                        </li>
+                        <li>
+                            Puntos de carrera: 18.
+                        </li>
+                        <li>
+                            Posición: 10º.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            </li>
+            <li>Año 2022
+                <ol>
+                    <li>Italia
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 18.
+                            </li>
+                            <li>
+                                Posición: 18º.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>EEUU
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 18.
+                            </li>
+                            <li>
+                                Posición: 15º.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Azerbaiyán
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 16.
+                            </li>
+                            <li>
+                                Posición: 17º.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Año 2021
+                <ol>
+                    <li>Bélgica
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 20.
+                            </li>
+                            <li>
+                                Posición: 8º.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Brasil
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 20.
+                            </li>
+                            <li>
+                                Posición: 14º.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Azerbaiyán
+                        <ul>
+                            <li>
+                                Escuderia: Aston Martin.
+                            </li>
+                            <li>
+                                Puntos de carrera: 19.
+                            </li>
+                            <li>
+                                Posición: 13º.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                </li>
+            
+        </ul>
+    
+        <h3>Presentación</h3>
+        <p>Es un piloto de automovilismo canadiense.1​ Ganó los campeonatos de Fórmula 4 Italiana
+            en 2015 y Fórmula 3 Europea en 2016. Disputó las temporadas 2017 y 2018 con Williams
+            en Fórmula 1, en 2019 y 2020 fue piloto de Racing Point. Actualmente es piloto de la
+            escudería Aston Martin F1 Team.</p>
+    
+        <h3>Equipos en los que ha participado</h3>
+        <ol>
+            <li>Ford Chip Ganassi Racing</li>
+            <li>Williams Martini Racing</li>
+            <li>Racing Point Force India F1 Team</li>
+            <li>Prema Powerteam</li>
+            <li>M2 Competition</li>
+            <li>Jackie Chan DCR Jota</li>
+            <li>SportPesa Racing Point F1 Team</li>
+            <li>BWT Racing Point F1 Team</li>
+            <li>Aston Martin Cognizant Formula One Team</li>
+            <li>Aston Martin Aramco Cognizant Formula One Team</li>
+            <li>Aston Martin Aramco Formula One Team</li>
+        </ol> 
+   
+    <aside>
+        <h3>Conceptos</h3>
+        <dl>
+            <dt> <a href="https://es.wikipedia.org/wiki/Pit_stop" title="Enlace con más informacion del pit stop">pit stop </a></dt>
+                <dd>Parada de mantenimiento estratégica</dd>
+            <dt> <a href="https://es.wikipedia.org/wiki/Pole_position#:~:text=La%20pole%20position%2C%20primera%20posici%C3%B3n,de%20salida%20de%20una%20carrera." title="Enlace con más informacion del pole">pole</a>  </dt>
+                <dd>Posicion de salida adelantada</dd>
+            <dt> <a href="https://es.motorsport.com/f1/news/reglas-formula1-2021-perjudican-mercedes-rake/5934586/#:~:text=El%20t%C3%A9rmino%20rake%20se%20usa,concepto%20de%20monoplaza%20desde%202009." title="Enlace con más informacion del rake">rake</a>  </dt>
+                <dd>Inclinación del coche de Fórmula 1 desde el morro hasta la parte trasera, y quizás esté más asociado con Red Bull y su concepto de monoplaza desde 2009.</dd>
+            <dt> <a href="https://www.relevo.com/formula1/efecto-suelo-formula-20230718151344-nt.html#:~:text=El%20principal%20cambio%20de%20la,la%20parte%20inferior%20del%20monoplaza." title="Enlace con más informacion del efecto suelo">efecto suelo</a> </dt>
+                <dd>Es un efecto que aprovecha el vehiculo para mantener un mejor agarre</dd>
+            <dt> <a href="https://www.caranddriver.com/es/formula-1/a45392481/que-es-drag-en-coche-formula-1/#:~:text=Los%20equipos%20de%20F1%20utilizan,curvas%20a%20velocidades%20m%C3%A1s%20altas." title="Enlace con más informacion del drag">Drag</a>  </dt>
+                <dd>Agarre del vehiculo </dd>
+        </dl>
+    </aside>
+
+    <h3>Video del piloto </h3>
+    <video controls preload="auto">
+        <source src="multimedia/videos/VídeoLanceStroll.mp4" type="video/mp4" />
+        <source src="multimedia/videos/VídeoLanceStroll.webm" type="video/webm" />
+    </video>
+
+    <h3>Audio del piloto </h3>
+    <audio controls>
+        <source type="audio/m4a" src="multimedia/audios/LanceThisIsNotACar.m4a" />
+        <source type="audio/wav" src="multimedia/audios/LanceThisIsNotACar.wav" />
+        <source type="audio/mp3" src="multimedia/audios/LanceThisIsNotACar.mp3" />
+        </audio>
+    </main>
+    <footer>
+        <h3>Informacion del autor:</h3>
+        <p>Esta página se ha desarrollado por Jorge Puente García</p>
+    </footer>
+    
+</body>
+
+</html>

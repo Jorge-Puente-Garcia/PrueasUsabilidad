@@ -1,0 +1,363 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+
+
+header{
+    padding: 1rem 2rem;
+    background-color: black; 
+    color: #fff; 
+}
+/*
+Hay que poner la especificidad
+Especificidad 0,0,1;
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+body{
+    font-family: 'Verdana', sans-serif;
+    background-color: #FFFFFF;
+}
+/*
+Hay que poner la especificidad
+Especificidad 0,0,1;
+Warning:Hay un color de primer plano establecido y no hay color de fondo
+El color de fondo se ha utilizado el predefinido.
+*/
+h1{
+    font-size: 5rem;
+    text-decoration: none; 
+    color: #fff; 
+}
+
+
+/*
+El enlace del title 1
+Especificidad 0,1,2;
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+header > a:first-of-type{
+    text-decoration-line: none;
+    background-color: #000000;
+
+}
+/*
+Elementos a del navegador
+Especificidad 0,1,2;
+Warning:Hay un color de primer plano establecido y no hay color de fondo
+El color de fondo se ha utilizado el predefinido.
+*/
+nav >a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1rem; 
+    padding: 0.5rem 1rem; 
+    margin: 1rem 1rem;
+}
+nav >a:hover {
+    border-radius: 1em;
+    color: #F5F859;    
+    background-color: #555;
+}
+nav> a.active {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 1em;
+}
+/*
+Migas 
+Especificad(0,1,2)
+*/
+body > p:first-of-type{
+    color: #000000;
+    font-size:x-large;
+}
+/*
+Especifidad 0,1,3
+Warning:Hay un color de primer plano establecido y no hay color de fondo
+El color de fondo se ha utilizado el predefinido.
+*/
+body > p:first-of-type > a{
+    text-decoration-line: none;
+    color: #000000;
+    font-size:large;
+}
+/*
+Especifidad 0,2,3
+*/
+body > p:first-of-type > a:hover{
+    font-size:x-large;
+}
+/*
+Especifidad 0,0,1
+*/
+li,p, dt{
+    font-size: x-large;
+}
+/*
+Especifidad 0,0,1
+*/
+ul { list-style: square} 
+/*
+Especifidad 0,0,1
+*/
+ul ul { list-style: circle } 
+/*
+Especifidad 0,0,1
+*/
+ul ol { list-style: decimal } 
+/*
+Especifidad 0,0,1
+*/
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1em solid rgb(0, 0, 0);
+  }
+  /*
+Especifidad 0,0,1
+*/
+th,td{
+    border: solid 0.1em black;
+    padding: 3%;
+}
+/*
+Especifidad 0,1,3
+Warning:Redefinición de font-size
+Se redefine el tamaño de la fuente para las las migas de pan
+*/
+body > p:first-of-type>a{
+    font-size:large;
+}
+/*
+Especificidad 0,0,1;
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+h2{
+    font-size:350%;
+    background-color: #FCB1B1;
+}
+/*
+Especificidad 0,0,1;
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+h3{
+    font-size:250%;
+    background-color: #DEAFFD;
+}
+/*
+Especifidad 0,0,1
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+h4{
+    font-size:220%;
+    background-color:#CBFFBD;
+}
+
+/*
+Especifidad 0,0,1
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+h5{
+font-size:200%;
+background-color: #A7FFB5;  
+}
+/*
+Especifidad 0,0,1
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha utilizado el predefinido.
+*/
+h6{
+    font-size:180%;
+    background-color: #FFECB3;
+}
+/*
+Especifidad 0,0,4
+Warning:Hay un color de primer plano establecido y no hay color de fondo
+El color de fondo se ha utilizado el predefinido.
+*/
+aside > dl >dt > a{
+    color: #000000;
+    font-size:large;
+}
+/*
+Especifidad 0,1,4
+*/
+aside > dl >dt > a:hover{
+    font-size:x-large;
+}
+/*
+Especifidad 0,0,4
+*/
+aside > dl > dt > dd {
+    font-size:x-large;
+}
+/*
+Especifidad 0,0,1
+*/
+video{
+    width: 100%;
+    height: auto;
+}
+
+ /*
+    Especificidad 0,0,0;
+    */
+    section + div{
+        width: 70%;
+        height: 40em;
+        margin-top: 70vh;
+    }
+
+/*
+
+*/
+@media screen and (max-width: 600px) {
+    /*
+    Especificidad 0,0,1
+    */
+    header{
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    /*
+    Especificidad 0,0,1; 
+    */
+    nav{
+        flex-wrap: wrap; 
+        justify-content: left; 
+        gap: 0.5rem;
+    }
+    /*
+    Especifidad 0,1,2
+    */
+    body > p:first-of-type {
+        display: none;
+    }
+    /*
+    Especificidad 0,0,1;
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    */
+    h1{
+        font-size: 400%;
+    }
+
+    /*
+    Especificidad 0,0,1;
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    
+    */
+    h2{
+        font-size:300%;
+    }
+    /*
+    Especificidad 0,0,1;
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    
+    */
+    h3{
+        font-size:200%;
+    }
+    /*
+    Especifidad 0,0,1
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    
+    */
+    h4{
+        font-size:180%;
+    }
+    /*
+    Especifidad 0,0,1
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    
+    */
+    h5{
+        font-size:150%;
+    }
+    /*
+    Especifidad 0,0,1
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    
+    */
+    h6{
+        font-size:120%;
+    }
+    /*
+    Especifidad 0,0,2
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    */
+    nav >a {
+        font-size: 120%;
+    }
+    /*
+    Especifidad 0,1,3
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    */
+    body > p:first-of-type>a{
+        font-size:small;
+    }
+    /*
+    Especifidad 0,1,2
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    */
+    body > p:first-of-type{
+        color: #000000;
+        font-size:large;
+    }
+    /*
+    Especifidad 0,2,3
+    Warning:Redefinición de font-size
+    El tamaño de fuente se ha cambiado para que sea más adecuado al tamaño de la pantalla.
+    */
+    body > p:first-of-type > a:hover{
+        font-size:large;
+    }
+    /*
+    Especifidad 0,0,1
+    */
+    li,p, dt{
+        font-size: large;
+    }
+  }
+/*
+Especificidad 0,0,3;
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano se ha definido previamente en el archivo de estilos.
+*/
+ body>div>article{
+    flex: 0 0 calc(25% - 1em); /* Cada tarjeta ocupa el 25% del ancho menos el gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    background-color: #bafcb5;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+
+

@@ -1,0 +1,78 @@
+/*Especificidad 002*/
+body>section {
+    display: grid;
+    gap: 1.25em;
+    max-width: 75em; 
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    margin: auto;
+}
+/*
+Especificidad 003
+*/
+body>section>h3{
+    grid-column: 1 / -1;
+}
+/*
+Especificidad 003
+*/
+body>section>article {
+    background-color: #1c1c1e;
+    color : #fff;
+    border: 0.1em solid #b30000;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/*Especificidad 004*/
+body>section>article>h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-bottom: 0.5em;
+    background-color: #1c1c1e;
+}
+/*Especificidad 004*/
+body>section>article>h4 {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 0.2em;
+    background-color: #1c1c1e;
+}
+/*
+Especificidad 004
+*/
+body>section>article>p {
+    font-size: 1em;
+    color:#e0e0e0;
+    background-color: #1c1c1e;
+    margin: 0.25em 0;
+}
+/*
+Especificidad 003
+*/
+body>section>article:first-of-type {
+    background-color: #1c1c1e;
+    color: #fff;
+    border: 0.3em solid #b30000;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+/*Especificidad 004*/
+body>section>article:first-of-type>h4 {
+    font-size: 1.2em;
+    color: #ff2323;
+    margin-bottom: 0.2em;
+    background-color: #1c1c1e;
+}
+/*
+Especificidad 004
+*/
+body>section>article:first-of-type>p {
+    font-size: 1em;
+    color:#ff2323;
+    background-color: #1c1c1e;
+    margin: 0.25em 0;
+}

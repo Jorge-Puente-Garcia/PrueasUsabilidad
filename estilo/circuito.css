@@ -1,0 +1,39 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+/*
+Especificidad 0,0,1
+*/
+section{
+    white-space: pre-wrap;
+    width: 100%;
+}
+/*
+Especificidad 0,0,2
+*/
+section>svg{
+    display: flex;
+    width: 100%;
+    height: 20em;
+}
+/*
+Especificidad 0,0,1
+Warning:Hay un color de fondo establecido y no hay color de primer plano
+El color de primer plano lo saca de la hoja de estilos principal
+*/
+polyline{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+/*
+Especificidad 0,0,1
+*/
+main>section>section{
+    color: #000000;
+    width: 100%;
+    height: 40em;
+}
+
+

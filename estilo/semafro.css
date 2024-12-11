@@ -1,0 +1,113 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+/*
+Especifidad 002
+*/
+  body>main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+  }
+/*
+Especifidad 003
+*/
+  body>main>button{
+    font-size: 2em;
+  }
+  /*
+Especifidad 013
+*/
+  body>main>button:first-of-type{
+    grid-column: 2 / 3;
+  }
+  /*
+Especifidad 013
+*/
+  body>main>button:last-of-type{
+    grid-column: 3 / 4;
+  }
+  /*
+Especifidad 003
+*/
+  body>main>p{
+    grid-row: 3;
+    grid-column: 1 / 5;
+  }
+  /*
+  Especifidad 002
+  Warning:Hay un color de fondo establecido y no hay color de primer plano
+  El color de primer plano ya se establece previmente.
+*/
+  main>div{
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 0.7em solid #000000;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  /*
+  Warning:Hay un color de fondo establecido y no hay color de primer plano
+  El color de primer plano ya se establece previmente.
+  Warning: Redefinición de background-color
+  Se cambia el color segun se ejecuta el encendido del semaforo
+  */
+  @keyframes light-up {
+    0% {
+      background-color: black;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+ /*
+  Warning:Hay un color de fondo establecido y no hay color de primer plano
+  El color de primer plano ya se establece previmente.
+  Warning: Redefinición de background-color
+  Se cambia el color segun se ejecuta el encendido del semaforo
+  */
+  @keyframes light-down {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+  /*
+Especifidad 012
+*/
+  main.load>div {
+    animation: light-up 0.5s forwards;
+  }
+  /*
+Especifidad 022
+*/
+  main.load>div:nth-child(1) {
+    animation-delay: 0s;
+  }
+  /*
+Especifidad 022
+*/
+  main.load>div:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  /*
+Especifidad 022
+*/
+  main.load>div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  /*
+Especifidad 022
+*/
+  main.load>div:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+/*
+Especifidad 012
+*/
+  main.unload>div {
+    animation: out 0.1s forwards;
+  }
